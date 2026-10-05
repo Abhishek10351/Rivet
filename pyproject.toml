@@ -1,0 +1,19 @@
+[project]
+name = "rivet"
+version = "0.1.0"
+description = "A developer's project manager tool"
+readme = "README.md"
+authors = [
+    { name = "Abhishek Kashyap", email = "abhik5567@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "pyside6>=6.11.2",
+]
+
+[project.scripts]
+rivet = "rivet.main:main"
+
+[build-system]
+requires = ["uv_build>=0.12.18,<0.13.0"]
+build-backend = "uv_build"
